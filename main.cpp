@@ -27,6 +27,7 @@ int main() {
     std::thread([_eventHandler] { _eventHandler->sendMessage(AIR, "Hello from WATER");}).detach();
     std::thread([_eventHandler] { _eventHandler->sendMessage(EARTH, "Hello from WATER");}).detach();
     std::thread([_eventHandler] { _eventHandler->sendMessage(WIND, "Hello from WATER");}).detach();
-    std::this_thread::sleep_for(std::chrono::seconds (1));
+
+    std::this_thread::sleep_for(std::chrono::milliseconds (1));
     return 0;
 }
