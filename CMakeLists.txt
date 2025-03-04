@@ -4,5 +4,6 @@ project(EldenTree VERSION 1.0.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(EldenTree main.cpp
-        EventHandler.h)
+include_directories(${PROJECT_SOURCE_DIR}/Include)
+
+add_executable(EldenTree main.cpp)

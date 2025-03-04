@@ -6,7 +6,6 @@
 int main() {
     auto _eventHandler = std::make_shared<EventHandler>();  // Shared pointer
 
-
     _eventHandler->addGod(WICHGOD::AIR, [](const std::string& action) {
         std::cout << "God Air Received Message: " << action << std::endl;
     });
