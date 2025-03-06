@@ -1,5 +1,5 @@
-#ifndef ELDENTREE_EVENTHANDLER_H
-#define ELDENTREE_EVENTHANDLER_H
+#ifndef EVENTHANDLER_H
+#define EVENTHANDLER_H
 
 #include <functional> //using for function pointer
 #include <unordered_map>
@@ -72,6 +72,7 @@ public:
             );
     }
 
+
 private:
     std::unordered_map<WICHGOD, std::variant<
             Callback<void()>,
@@ -86,4 +87,4 @@ private:
     mutable std::mutex m_mutex;
 };
 
-#endif //ELDENTREE_EVENTHANDLER_H
+#endif //EVENTHANDLER_H
