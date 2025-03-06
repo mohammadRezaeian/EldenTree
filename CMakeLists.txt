@@ -16,7 +16,7 @@ option(BUILD_TEST "Do you want build Test software?!" ON)
 
 
 if (BUILD_MAIN)
-    add_executable(EldenTree main.cpp ${HEADER_FILES})
+    add_executable(EldenTree ${PROJECT_SOURCE_DIR}/Src/main.cpp ${HEADER_FILES})
 endif ()
 
 if (BUILD_TEST)
